@@ -1,5 +1,6 @@
 const fs=require('fs');
 const path=require('path');
+require('dotenv').config();
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -57,3 +58,9 @@ app.listen(5000);
 }).catch(err=>{{
   console.log(err);
 }});
+
+
+app.use(express.static(path.join(__dirname, "../FRONTEND/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../FRONTEND/build/index.html"));
+});

@@ -7,7 +7,7 @@ frontend/build/
 
 # Environment files
 *.env
-backend/nodemon.json
+ 
 # Logs and system files
 *.log
 .DS_Store
