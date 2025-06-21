@@ -1,8 +1,0 @@
-{
-  "env":{
-    "DB_USER":"nusrat",
-    "DB_PASSWORD":"academind123",
-    "DB_NAME":"mern",
-    "JWT_KEY":"supersecret_dont_share"
-  }
-}
